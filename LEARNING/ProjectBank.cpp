@@ -4,7 +4,6 @@
 #include <unistd.h>
 using namespace std;
 
-
 void ptrtambah(int* ptr,int x){ 
     *ptr += x;
 }
@@ -12,18 +11,9 @@ void ptrtarik(int* ptr1, int y){
     *ptr1 -= y;
 }
 
-
 int main() {
     int saldo,pilihan = 0, Rcounter = 0;
     string riwayat[100];
-    string arr[1000];    
-
-    //Form Login :
-    cout << "LOGIN DULU" << endl;
-    string login;
-    cout << "Nama : ";
-    getline(cin >> ws, login);
-    cout << login << endl;
 
     cout << " ------ Welcome to Mini Bank----------" << endl;
     cout << "masukan saldo awal anda ";
@@ -40,8 +30,7 @@ int main() {
         cout << "2.Tambah Saldo" << endl;
         cout << "3.Tarik Saldo"  << endl;
         cout << "4.Riwayat Transaksi" << endl;
-        cout << "5.Register Account"<< endl;
-        cout << "6.Keluar" << endl;
+        cout << "5.Keluar" << endl;
     cout << "============================================"<< endl;
         cout << "pilihan : ";
         cin >> pilihan;
@@ -81,14 +70,7 @@ int main() {
                  for (int i = 0; i < Rcounter ; i++){
                     cout << i+1 << ". " << riwayat[i] << endl;
                  }}
-        else if (pilihan == 5) {
-            string nama;
-            string password;
-            cin >> nama;
-            cin >> password;            
-       }
-
-        else if (pilihan == 6){
+        else if (pilihan == 5){
             cout << "TERIMAKASIH DAN SAMPAI JUMPA" << endl;
            return 0;
         }
